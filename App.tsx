@@ -24,11 +24,6 @@ import {
   View,
 } from 'react-native';
 
-// To Study:
-//   useState,
-//   useEffect,
-//   prpos
-
 function App(): JSX.Element {
 
   const ImageOption = (props:any) => {
@@ -44,14 +39,6 @@ function App(): JSX.Element {
     )
   }
 
-  // const Box=(props:any)=>{
-  //   return 
-  //     <View style={{height:100, width:100, backgroundColor:'red'}}>
-  //       <Text>{props.text}</Text>
-  //     </View>
-    
-  // }
-
   return (
     <>
       <SafeAreaView style={style.container}>
@@ -60,18 +47,14 @@ function App(): JSX.Element {
           <Text style={style.text}>Which of these is "the glass"?</Text>
         </View>
 
-        <View style={style.imgContainer}>
-           
+        <View style={style.imgContainer}>           
            <ImageOption img={cup} text='Cup'/>
            <ImageOption img={coffee} text='Coffee'/>
            <ImageOption img={glass} text='Glass'/>
            <ImageOption img={milk} text='Milk'/>
-
         </View>
-      </SafeAreaView>
 
-
-      
+      </SafeAreaView>      
     </>
   );
 }
@@ -100,8 +83,6 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 2,
     borderColor: 'red',
-
-
   },
 
   text: {
